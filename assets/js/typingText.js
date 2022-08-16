@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["HTML & CSS", "Javascript", "Java", "Python", "Django", "Figma", "Illustrator", "Photoshop", "CorelDraw"];
+const textArray = ["HTML & CSS", "Javascript", "Python", "Django", "Figma", "Illustrator", "Photoshop", "CorelDraw"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 1000;
