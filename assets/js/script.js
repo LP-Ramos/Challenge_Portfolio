@@ -23,7 +23,7 @@ function mouseenterFunc() {
     const top = this.getBoundingClientRect().top + window.pageYOffset;
 
     let color = colors[0];
-    if(this.innerText == 'Projetos'){
+    if(this.innerText == 'Portfólio'){
         color = colors[1];
     } else if (this.innerText == 'Formação'){
         color = colors[2];

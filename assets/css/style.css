@@ -1,4 +1,4 @@
-#sobre, #projetos{
+#sobre, #projetos, #formacao, #experiencia{
     height: 50px;
 }
 
@@ -25,6 +25,7 @@
 .section__title-img{
     height: 30px;
     width: 30px;
+    margin-right: 10px;
     background: url("./../img/sobre.svg") center/cover, no-repeat;
 }
 
@@ -245,6 +246,197 @@
     width: 60%;
 }
 
+/* --------------------- */
+#formacao, #experiencia, #contato{
+    margin-top: 70px;
+}
+
+.section__title-formacao{
+    border: 4px solid var(--color-4);
+}
+
+.section__title-img-formacao{
+    background: url("./../img/formacao.svg") center/cover, no-repeat;
+}
+
+.section__div-formacao{
+    border: 4px solid var(--color-4);
+    flex-direction: column;
+}
+
+.section__div-formacao__item{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.section__div-formacao__item:not(:first-child){
+    margin-top: 40px;
+}
+
+.formacao__item__title{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.formacao__item__subTitle:not(:first-child){
+    opacity: .5;
+    font-size: 1.1rem;
+}
+
+.formacao__item__list{
+    margin: 5px 0px 0px 40px;
+    line-height: 1.5rem;
+    list-style-type: square;
+}
+
+.section__title-img-experiencia{
+    background: url("./../img/experiencia.svg") center/cover, no-repeat;
+}
+
+/* ---------------- */
+.section__title-contato{
+    border: 4px solid var(--color-5);
+}
+
+.section__title-img-contato{
+    background: url("./../img/contato.svg") center/cover, no-repeat;
+}
+
+.section__div-contato{
+    border: 4px solid var(--color-5);
+    flex-direction: column;
+}
+
+.section__div-contato__form, .section__div-contato__text, .section__div-contato__icons{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section__div-contato__text, .section__div-contato__icons{
+    width: 50%;
+}
+
+.section__div-contato__icons{
+    flex-direction: row;
+}
+
+.section__div-contato__form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.section__div-contato__form input, .section__div-contato__form textarea{
+    border-radius: 2px;
+    height: 100%;
+    border: none;
+    resize: none;
+}
+
+.section__div-contato__form textarea{
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.form__id, .form__text{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__id div, .form__text-subject, .section__div-contato__form{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-bg);
+}
+
+.section__div-contato__form{
+    padding: 20px 0px;
+}
+
+.form__id div, .form__text-subject{
+    background-color: var(--color-bg2);
+}
+
+
+.form__id div label, .form__text-subject label{
+    margin-right: 5px;
+}
+
+.form__text{
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.form__text-subject{
+    flex-direction: row;
+}
+
+.form__text-subject input{
+    width: 100%;
+}
+
+.form__submit{
+    margin-top: 10px;
+    width: 60%;
+}
+
+.form__submit input{
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+}
+
+
+.section__div-contato__text{
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+.section__div-contato__icons span{
+    background-color: #00000000;
+    padding: 4px;
+    border-radius: 5px;
+    transition: .3s all ease-in-out;
+}
+
+.section__div-contato__icons span:hover{
+    box-shadow: var(--color-txt1) 0px 0px 0px 1px;
+}
+
+.section__div-contato__icons span:nth-child(1):hover{
+    background-color: #168312;
+}
+
+.section__div-contato__icons span:nth-child(2):hover{
+    background-color: #ff1616;
+}
+
+.section__div-contato__icons span:nth-child(3):hover{
+    background-color: #8243c1;
+}
+
+.section__div-contato__icons span:nth-child(4):hover{
+    background-color: #0077b5;
+}
+
+.icon2{
+    width: 50px;
+    height: 50px;
+}
+
 @media screen and (min-width: 425px){
     .section__div-projetos__projeto-card{
         width: 80%;
@@ -261,6 +453,10 @@
         flex-direction: row;
     }
 
+    .section__div-formacao, .section__div-contato{
+        flex-direction: column;
+    }
+
     .section__div__list{
         width: 40%;
     }
@@ -269,10 +465,6 @@
         width: 50%;
         font-size: 1rem;
         margin-top: 0;
-    }
-
-    .section__title-text{
-        font-size: 1.5rem;
     }
 
     .section__div-projetos__projeto-card{
@@ -284,7 +476,7 @@
     }
 
     .section__div-projetos__projeto-text h3{
-    font-size: 1rem;
+        font-size: 1rem;
     }
 
     .section__div-projetos__projeto-text p{
@@ -317,8 +509,11 @@
         top: -30px;
     }
 
+    .section__title-text{
+        font-size: 2rem;
+    }
+
     .section__div{
-        flex-direction: row;
         padding: 50px 40px 20px 40px;
     }
 
