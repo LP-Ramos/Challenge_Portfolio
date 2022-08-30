@@ -2,9 +2,9 @@
 
 Olá esse é um projeto do programa ONE - Oracle Next Education.
 
-<img src="/img/projeto.png"/>
+<img src="/assets/img/projeto.png"/>
 
-#---
+#challengeoneportfolio2
   
 <h3 align="center">Desenvolvido por:
     <a href="https://www.linkedin.com/in/lp-ramos/" target="_blank">Leandro Ramos</a>
@@ -16,7 +16,7 @@ Olá esse é um projeto do programa ONE - Oracle Next Education.
 </p>
 
 # Desafio
-Esse é o primeiro Challenge #-- da trilha de Front-end, do programa ONE - Oracle Next Education, oferecido pela Oracle & Alura, criação do nosso portfólio de desenvolvedor.
+Esse é o primeiro Challenge #challengeoneportfolio2 da trilha de Front-end, do programa ONE - Oracle Next Education, oferecido pela Oracle & Alura, criação do nosso portfólio de desenvolvedor.
         
 
 ## Tecnologias Utilizadas:
